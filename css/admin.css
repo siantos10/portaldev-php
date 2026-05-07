@@ -393,6 +393,60 @@
 }
 
 /* ==================================================
+   EMAIL SELECT
+================================================== */
+
+.email-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.email-select {
+    padding-left: 15px;
+}
+
+.email-link {
+    flex: 1;
+
+    color: inherit;
+}
+
+/* ==================================================
+   BOTÃO DELETE
+================================================== */
+
+.delete-btn {
+    background: crimson;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.email-actions {
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    background: #fafafa;
+}
+
+/* ==================================================
    RESPONSIVO ADMIN
 ================================================== */
 

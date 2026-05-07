@@ -8,13 +8,14 @@ $mensagens = [];
 
 if (file_exists($arquivo)) {
 
-    $conteudo = file_get_contents($arquivo);
+    $mensagens = json_decode(
+        file_get_contents($arquivo),
+        true
+    );
 
-    $mensagens = json_decode($conteudo, true);
-}
-
-if (!$mensagens) {
-    $mensagens = [];
+    if (!$mensagens) {
+        $mensagens = [];
+    }
 }
 ?>
 
@@ -26,48 +27,70 @@ if (!$mensagens) {
 
     </div>
 
-    <div class="email-list">
+    <form method="POST" action="deletar.php">
 
-        <?php foreach (array_reverse($mensagens, true) as $index => $msg): ?>
+        <div class="email-actions">
 
-            <a
-                href="visualizar.php?id=<?= $index ?>"
-                class="email-item <?= !$msg["lida"] ? 'nao-lida' : '' ?>"
-            >
+            <button type="submit" class="delete-btn">
+                🗑 Apagar Selecionadas
+            </button>
 
-                <div class="email-top">
+        </div>
 
-                    <span class="email-nome">
+        <div class="email-list">
 
-                        <?= htmlspecialchars($msg["nome"]) ?>
+            <?php foreach (array_reverse($mensagens, true) as $index => $msg): ?>
 
-                    </span>
+                <div class="email-item <?= !$msg["lida"] ? 'nao-lida' : '' ?>">
 
-                    <span class="email-data">
+                    <div class="email-select">
 
-                        <?= htmlspecialchars($msg["data"]) ?>
+                        <input
+                            type="checkbox"
+                            name="selecionadas[]"
+                            value="<?= $index ?>"
+                        >
 
-                    </span>
+                    </div>
+
+                    <a
+                        href="visualizar.php?id=<?= $index ?>"
+                        class="email-link"
+                    >
+
+                        <div class="email-top">
+
+                            <span class="email-nome">
+                                <?= $msg["nome"] ?>
+                            </span>
+
+                            <span class="email-data">
+                                <?= $msg["data"] ?>
+                            </span>
+
+                        </div>
+
+                        <div class="email-email">
+
+                            <?= $msg["email"] ?>
+
+                        </div>
+
+                        <div class="email-preview">
+
+                            <?= substr($msg["mensagem"], 0, 80) ?>...
+
+                        </div>
+
+                    </a>
 
                 </div>
 
-                <div class="email-email">
+            <?php endforeach; ?>
 
-                    <?= htmlspecialchars($msg["email"]) ?>
+        </div>
 
-                </div>
-
-                <div class="email-preview">
-
-                    <?= htmlspecialchars(substr($msg["mensagem"], 0, 80)) ?>...
-
-                </div>
-
-            </a>
-
-        <?php endforeach; ?>
-
-    </div>
+    </form>
 
 </div>
 

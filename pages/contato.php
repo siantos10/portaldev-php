@@ -1,5 +1,7 @@
 <?php
-
+    
+date_default_timezone_set("America/Recife");
+    
 include("../includes/header.php");
 
 $sucesso = false;
@@ -23,13 +25,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     // CAMINHO JSON
-    $arquivo = "data/mensagens.json";
+    $arquivo = "../data/mensagens.json";
 
-    // LÊ MENSAGENS
-    $mensagens = json_decode(file_get_contents($arquivo), true);
+// SE NÃO EXISTIR, CRIA ARRAY VAZIO
+if (!file_exists($arquivo)) {
 
-    // ADICIONA
-    $mensagens[] = $novaMensagem;
+    $mensagens = [];
+
+} else {
+
+    $mensagens = json_decode(
+        file_get_contents($arquivo),
+        true
+    );
+
+    // GARANTE ARRAY
+    if (!$mensagens) {
+        $mensagens = [];
+    }
+}
+
+// ADICIONA NOVA
+$mensagens[] = $novaMensagem;
 
     // SALVA
     file_put_contents(
