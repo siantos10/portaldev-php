@@ -1,0 +1,486 @@
+/* ==================================================
+   ADMIN HEADER
+================================================== */
+
+.admin-header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background: #1e1e1e;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    z-index: 999;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* LOGO */
+
+.admin-logo {
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+/* MENU */
+
+.admin-nav {
+    display: flex;
+
+    gap: 15px;
+}
+
+.admin-nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.admin-nav a:hover {
+    background: #333;
+}
+
+/* ==================================================
+   CONTEÚDO ADMIN
+================================================== */
+
+.admin-content {
+    margin-top: 90px;
+
+    padding: 30px;
+}
+
+/* ==================================================
+   LOGIN
+================================================== */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f4f4;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+.login-form button {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+
+    background: #222;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-form button:hover {
+    background: #444;
+}
+
+/* ERRO */
+
+.error {
+    background: #ffdddd;
+
+    color: darkred;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+}
+
+/* ==================================================
+   PAINEL
+================================================== */
+
+.painel {
+    padding: 40px;
+}
+
+/* GRID */
+
+.dashboard-grid {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+/* CARD */
+
+.dashboard-card {
+    flex: 1;
+
+    min-width: 300px;
+
+    background: #f4f4f4;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-card a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    background: #222;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+}
+
+/* ==================================================
+   BOTÕES
+================================================== */
+
+/* ==================================================
+   BOTÕES PADRÃO ADMIN
+================================================== */
+
+.back-site-btn,
+.voltar-btn,
+.admin-btn {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #444;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.logout-btn{
+    padding: 14px 25px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.back-site-btn:hover,
+.voltar-btn:hover,
+.admin-btn:hover {
+    background: #666;
+}
+
+.logout-btn {
+    background: crimson;
+}
+
+.logout-btn:hover {
+    background: darkred;
+    color:#1e1e1e;
+}
+
+.back-site-btn:hover,
+.voltar-btn:hover {
+    background: #666;
+}
+
+/* ==================================================
+   EMAIL / CAIXA DE ENTRADA
+================================================== */
+
+.email-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* TOPO */
+
+.email-header {
+    padding: 20px;
+
+    background: #222;
+
+    color: white;
+}
+
+/* LISTA */
+
+.email-list {
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* ITEM */
+
+.email-item {
+    padding: 20px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.2s;
+}
+
+.email-item:hover {
+    background: #f5f5f5;
+}
+
+/* NÃO LIDA */
+
+.email-item.nao-lida {
+    background: #eef4ff;
+
+    font-weight: bold;
+}
+
+/* TOPO ITEM */
+
+.email-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+}
+
+/* EMAIL */
+
+.email-email {
+    color: #666;
+
+    margin-bottom: 5px;
+}
+
+/* PREVIEW */
+
+.email-preview {
+    color: #333;
+}
+
+/* ==================================================
+   VISUALIZAR MENSAGEM
+================================================== */
+
+.mensagem-view {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mensagem-texto {
+    margin-top: 20px;
+
+    line-height: 1.8;
+
+    white-space: pre-wrap;
+}
+
+/* ==================================================
+   EMAIL SELECT
+================================================== */
+
+.email-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.email-select {
+    padding-left: 15px;
+}
+
+.email-link {
+    flex: 1;
+
+    color: inherit;
+}
+
+/* ==================================================
+   BOTÃO DELETE
+================================================== */
+
+.delete-btn {
+    background: crimson;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.email-actions {
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    background: #fafafa;
+}
+
+/* ==================================================
+   RESPONSIVO ADMIN
+================================================== */
+
+@media (max-width: 768px) {
+
+    .admin-header {
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 15px;
+    }
+
+    .admin-nav {
+        margin-top: 10px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .admin-content {
+        margin-top: 140px;
+
+        padding: 15px;
+    }
+
+    .dashboard-grid {
+        flex-direction: column;
+    }
+
+    .email-top {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+}

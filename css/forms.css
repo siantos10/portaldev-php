@@ -1,0 +1,141 @@
+/* ==================================================
+   FORMULÁRIO CONTATO
+================================================== */
+
+.form-contato {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background: #f4f4f4;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* LABELS */
+
+.form-contato label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+/* INPUTS E TEXTAREA */
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background: white;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    transition: 0.3s ease;
+}
+
+/* PLACEHOLDER */
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+    color: #999;
+}
+
+/* FOCUS */
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    outline: none;
+
+    border: 1px solid #4a90e2;
+
+    background: #f0f7ff;
+
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+/* TEXTAREA */
+
+.form-contato textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+/* BOTÃO */
+
+.form-contato button {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* HOVER BOTÃO */
+
+.form-contato button:hover {
+    background: #444;
+}
+
+/* MENSAGEM SUCESSO */
+
+.success {
+    background: #d4edda;
+
+    color: #155724;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+
+    border: 1px solid #c3e6cb;
+}
+
+/* ==================================================
+   RESPONSIVO
+================================================== */
+
+@media (max-width: 768px) {
+
+    .form-contato {
+        padding: 20px;
+    }
+
+    .form-contato input,
+    .form-contato textarea,
+    .form-contato button {
+        font-size: 15px;
+    }
+}

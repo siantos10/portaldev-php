@@ -1,0 +1,146 @@
+/* ==================================================
+   BODY
+================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.container {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    flex: 1;
+
+    width: 100%;
+}
+
+/* ==================================================
+   SIDEBARS
+================================================== */
+
+.left,
+.right {
+    width: 20%;
+
+    background: #f4f4f4;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+    min-width: 0;
+}
+
+/* LISTAS */
+
+.left ul,
+.right ul {
+    padding-left: 20px;
+}
+
+.left li,
+.right li {
+    margin-bottom: 8px;
+
+    word-break: break-word;
+}
+
+/* ==================================================
+   MAIN
+================================================== */
+
+.main {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    flex: 1;
+}
+
+/* TEXTOS */
+
+.main p,
+.main li,
+.main code,
+.main pre {
+    word-break: break-word;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: auto;
+}
+
+/* ==================================================
+   RESPONSIVO
+================================================== */
+
+@media (max-width: 1024px) {
+
+    .left,
+    .right {
+        width: 25%;
+    }
+
+    .main {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right,
+    .main {
+        width: 100%;
+    }
+}
