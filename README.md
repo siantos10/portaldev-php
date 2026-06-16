@@ -16,7 +16,7 @@ Plataforma acadêmica para aprendizado de HTML5, CSS3 e JavaScript, desenvolvida
 * [Capturas de Tela](#-capturas-de-tela)
 * [Como Executar o Projeto](#-como-executar-o-projeto)
 * [Conceitos Aplicados](#-conceitos-aplicados)
-* [Autor](#-autor)
+* [Autor](#autor)
 * [Conclusão](#-conclusão)
 
 ---
