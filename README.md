@@ -21,6 +21,7 @@ Plataforma acadêmica para aprendizado de HTML5, CSS3 e JavaScript, desenvolvida
 
 ---
 
+<a id="sobre-o-projeto"></a>
 ## 📖 Sobre o Projeto
 
 O **Portal Dev** é uma plataforma web educacional desenvolvida para centralizar conteúdos introdutórios sobre desenvolvimento front-end.
@@ -33,6 +34,7 @@ O projeto foi desenvolvido utilizando PHP e armazenamento de dados em JSON, disp
 
 ---
 
+<a id="objetivos"></a>
 ## 🎯 Objetivos
 
 * Facilitar o aprendizado de tecnologias web.
@@ -43,6 +45,7 @@ O projeto foi desenvolvido utilizando PHP e armazenamento de dados em JSON, disp
 
 ---
 
+<a id="funcionalidades"></a>
 ## ✨ Funcionalidades
 
 ### 🌐 Área Pública
@@ -77,6 +80,7 @@ O projeto foi desenvolvido utilizando PHP e armazenamento de dados em JSON, disp
 
 ---
 
+<a id="tecnologias-utilizadas"></a>
 ## 🛠 Tecnologias Utilizadas
 
 | Tecnologia      | Finalidade                          |
@@ -91,6 +95,7 @@ O projeto foi desenvolvido utilizando PHP e armazenamento de dados em JSON, disp
 
 ---
 
+<a id="estrutura-do-projeto"></a>
 ## 📂 Estrutura do Projeto
 
 ```text
@@ -150,6 +155,7 @@ portaldev-php/
 
 ---
 
+<a id="fluxo-de-funcionamento"></a>
 ## 🔄 Fluxo de Funcionamento
 
 ```mermaid
@@ -169,6 +175,7 @@ H --> I[Atualização do arquivo JSON]
 
 ---
 
+<a id="capturas-de-tela"></a>
 ## 📸 Capturas de Tela
 
 ### 🏠 Página Inicial
@@ -229,6 +236,9 @@ Formulário para envio de dúvidas, sugestões e mensagens, com validação e m�
 
 Tela responsável pela visualização, consulta e gerenciamento das mensagens enviadas pelos usuários através do formulário de contato.
 
+---
+
+<a id="como-executar-o-projeto"></a>
 ## 🚀 Como Executar o Projeto
 
 ### Pré-requisitos
@@ -303,6 +313,7 @@ http://localhost/portaldev-php/admin/login.php
 
 ---
 
+<a id="conceitos-aplicados"></a>
 ## 🎓 Conceitos Aplicados
 
 ### HTML5
@@ -360,6 +371,7 @@ Durante o desenvolvimento deste projeto foram praticados conhecimentos relaciona
 
 ---
 
+<a id="autor"></a>
 ## 👨‍💻 Autor
 
 **Edson M. Santos**
@@ -374,6 +386,7 @@ Projeto desenvolvido exclusivamente para fins educacionais e acadêmicos.
 
 ---
 
+<a id="conclusao"></a>
 ## 🏁 Conclusão
 
 O Portal Dev permitiu a aplicação prática dos principais conceitos estudados em Desenvolvimento Web, integrando HTML, CSS, JavaScript e PHP em uma solução funcional.
